@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <title>Biografia mejorada con Bootstrap</title>
+</head>
+<!-- Decidí mejorar la página que ralizamos en el módulo 1, en ese caso realicé la biografia de un artista que me gustó mucho en mi juventud -->
+
+<body>
+  <header></header>
+
+  <!--------------------------------------------- bt del navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="http://hilaryduff.com/" target="_blank">Ir a página oficial</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#RedesSociales"
+              title="ir a redes sociales"><i class="bi bi-wechat"></i> Redes Sociales y mas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#headingTwo"
+              title="ir a biografia"><i class="bi bi-file-text-fill"></i> Biografía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!----------------------------------------- fin del bt del navbar -->
+  <!------------------------------------------ carrousel de imagenes -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img
+          src="https://www.eluniverso.com/resizer/fCegBXjxBvx28gy6CuisFfj3e3s=/1005x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/E57MT7PUS4P4OL7PKRIDA6QADU.jpg"
+          class="d-block mx-auto" width="750px" alt="How I met your mother">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Actuando en su nueva serie</h5>
+          <p>Interpretando a su nuevo personaje en la serie "How I met your mother"</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.mundodeportivo.com/uploads/2022/07/23/62dbf2f6ba87b.jpeg" class="d-block mx-auto"
+          width="850px" alt="Lizzie McGuire">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Actuando en la serie que la catapultó a la fama</h5>
+          <p>Interpretando a Lizzie Mcguire</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://api.time.com/wp-content/uploads/2015/03/hillary-duff.jpg" class="d-block mx-auto"
+          width="420px" alt="gala">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Fotografia en una premiación</h5>
+          <p>Posando en la premiación "Younger, año 2018"</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- --------------------------------------- acordiones -->
+  <div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Breve biografia
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+
+          <p><strong><em>Hilary Erhard Duff (Houston, 28 de septiembre de 1987), conocida artísticamente como Hilary
+                Duff, es una actriz, cantante, compositora, empresaria, autora estadounidense.</em></strong></p>
+          <p>Nacida y criada en Houston, Texas, Duff comenzó su carrera desde muy temprana edad, participando en
+            producciones de teatro locales y anuncios de televisión. En 1997 recibió su primer papel cinematográfico,
+            donde interpretó el papel principal en la película Casper y la mágica Wendy. También apareció en la película
+            True Women (1997) antes de llegar a la fama en el papel protagonista de la comedia adolescente de Disney
+            Channel Lizzie McGuire</p>
+          <p>Duff amplió su repertorio para incluir música pop y ha lanzado varios álbumes. En 2003 álbum de estudio
+            Metamorphosis (2003) fue certificado por la RIAA triple platino, ubicándose en el puesto número ocho de los
+            discos más vendidos en 2003 en los Estados Unidos, mientras que el siguiente álbum de estudio Hilary Duff
+            (2004) y el álbum recopilatorio Most Wanted (2005) fueron discos de platino.
+            <br>Exhibió una imagen más adulta con el lanzamiento de Dignity (2007), que muestra un cambio a un sonido
+            más orientado al baile. Certificado oro, el single «With Love» fue su sencillo con mayor posición en los
+            charts hasta la fecha, llegando al número 1 en el Hot Dance Club Songs de Billboard de EE. UU.,
+            convirtiéndose en el primero de sus tres números uno consecutivos en esa lista.
+            <br>En 2008 salió a la venta con muy escasa promoción el álbum Best of Hilary Duff, una recopilación de sus
+            grandes éxitos con el cual Duff terminó su contrato con Hollywood Records. Duff ha vendido aproximadamente
+            15 millones de álbumes y sencillos en todo el mundo,2​ incluyendo los álbumes de las bandas sonoras de las
+            películas "The Lizzie McGuire Movie" y "A Cinderella Story") y había actuado en cuatro giras de conciertos a
+            nivel mundial.
+          </p>
+          <br>
+          <!--Utilizando em-->
+          <p><em>Para leer mas sobre su biografía seguir el siguiente <a
+                href="https://es.wikipedia.org/wiki/Hilary_Duff#:~:text=Nacida%20y%20criada%20en%20Houston,Casper%20y%20la%20m%C3%A1gica%20Wendy."
+                target="_blank" title="enlace para la biografia">link</a></em></p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Discografía
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <!---------------------------------- agregando tabla con bootstrap -->
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">#</th>
+                <th scope="col">año de lanzamiento</th>
+                <th scope="col">nombre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="6">
+                  <div style="text-align: center;">
+                    <img src="https://m.media-amazon.com/images/I/61H05D24WKL.jpg" alt="imagen del disco " Hilary Duff"
+                      width="250">
+                  </div>
+                <td>1</td>
+                <td>2022</td>
+                <td>Santa Claus Lane</td>
+              </tr>
+              <tr>
+
+                <td>2</td>
+                <td>2003</td>
+                <td>Metamorphosis</td>
+              </tr>
+
+              <td>3</td>
+              <td>2004</td>
+              <td>Hilary Duff</td>
+              </tr>
+
+              <td>4</td>
+              <td>2005</td>
+              <td>Most Wanted</td>
+              </tr>
+              </tr>
+
+              <td>5</td>
+              <td>2007</td>
+              <td>Dignity</td>
+              </tr>
+              </tr>
+
+              <td>6</td>
+              <td>2015</td>
+              <td>Breathe in. Breathe out</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- -----------------------------------------fin acordiones -->
+  <div id="RedesSociales">
+      <h2>
+        Redes Sociales
+      </h2>
+    <div>
+      <a href="https://twitter.com/hilaryduff" target="blank">
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-twitter"></i> Twitter Oficial</button>
+      </a>
+      <a href="https://www.facebook.com/HilaryDuff/" target="blank">
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook Oficial</button>
+      </a>
+      <a href="https://www.instagram.com/hilaryduff/" target="blank">
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-instagram"></i> Instagram Oficial</button>
+      </a>
+      <a href="https://www.instagram.com/hilaryduff/" target="blank">
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-instagram"></i> Amazon Music</button>
+      </a>
+      <a href="https://open.spotify.com/artist/2S9W9aSAd7e5mp8WqWxN2h" target="blank">
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-spotify"></i>Spotify</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
