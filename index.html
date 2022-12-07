@@ -12,6 +12,7 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bevan:ital@1&family=JetBrains+Mono:wght@600&family=Sora:wght@500&display=swap" rel="stylesheet">
   <title>Biografia mejorada con Bootstrap</title>
 </head>
 <!-- Decidí mejorar la página que ralizamos en el módulo 1, en ese caso realicé la biografia de un artista que me gustó mucho en mi juventud -->
@@ -20,7 +21,7 @@
   <header></header>
 
   <!--------------------------------------------- bt del navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light" class="barraprincipal">
     <div class="container-fluid">
       <a class="navbar-brand" href="http://hilaryduff.com/" target="_blank">Ir a página oficial</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,15 +32,17 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#RedesSociales"
-              title="ir a redes sociales"><i class="bi bi-wechat"></i> Redes Sociales y mas</a>
+              title="ir a redes sociales"><i class="bi bi-wechat"></i>Redes Sociales y mas</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#headingTwo"
-              title="ir a biografia"><i class="bi bi-file-text-fill"></i> Biografía</a>
+              title="ir a biografia"><i class="bi bi-file-text-fill"></i>   Biografía</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-
+            <a class="nav-link" href="#headingThree"
+              title="ir a biografia"><i class="bi bi-disc-fill"></i> Discografía</a>
+          </li>
+          
         </ul>
       </div>
     </div>
@@ -98,7 +101,7 @@
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
           aria-expanded="false" aria-controls="collapseTwo">
-          Breve biografia
+          <h4 class="text-primary">Breve biografia</h4>
         </button>
       </h2>
       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -135,10 +138,10 @@
       </div>
     </div>
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
+      <h2 class="accordion-header"  id="headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Discografía
+          <h4 class="text-secondary">Discografía</h4>
         </button>
       </h2>
       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
@@ -202,25 +205,27 @@
   </div>
   <!-- -----------------------------------------fin acordiones -->
   <div id="RedesSociales">
-      <h2>
+    <!-- Busqué por mis propios medios como cambiar el fondo de los botones al momento de pasar el mouse sobre ellos pero no pude xD -->
+      <h2 class="text-dark">
         Redes Sociales
       </h2>
-    <div>
+    <div class="bloqueredes">
       <a href="https://twitter.com/hilaryduff" target="blank">
         <button type="button" class="btn btn-outline-primary"><i class="bi bi-twitter"></i> Twitter Oficial</button>
       </a>
       <a href="https://www.facebook.com/HilaryDuff/" target="blank">
-        <button type="button" class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook Oficial</button>
+        <button  type="button" class="btn btn-outline-primary"><i class="bi bi-facebook"></i> Facebook Oficial</button>
       </a>
       <a href="https://www.instagram.com/hilaryduff/" target="blank">
         <button type="button" class="btn btn-outline-primary"><i class="bi bi-instagram"></i> Instagram Oficial</button>
       </a>
       <a href="https://www.instagram.com/hilaryduff/" target="blank">
-        <button type="button" class="btn btn-outline-primary"><i class="bi bi-instagram"></i> Amazon Music</button>
+        <button type="button" class="btn btn-outline-primary"><i class="bi bi-file-earmark-music-fill"></i> Amazon Music</button>
       </a>
       <a href="https://open.spotify.com/artist/2S9W9aSAd7e5mp8WqWxN2h" target="blank">
         <button type="button" class="btn btn-outline-primary"><i class="bi bi-spotify"></i>Spotify</button>
       </a>
+      
     </div>
   </div>
 </body>
